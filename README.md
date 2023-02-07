@@ -1,11 +1,11 @@
 # Python SOLID Design Principles
 
-This repository contains code examples of applying SOLID in Python
+Code examples of violating and applying SOLID principles in Python
 
-Each principle can be found in a corresponding folder:
+Each principle can be found in the corresponding folder:
 
-- 1_SRP - [Single Responsibility](./Single%20Responsibility/)
-- 2_OCP - Open-Close Principle
-- 3_LSP - Liskov Substitution Principle
-- 4_ISP - Interface Segregation Principle
-- 5_DIP - Dependency Inversion Principle
+- 1. SCP - [Single Responsibility](./Single%20Responsibility/)
+- 2. OPC - [Open-Closed](./Open-Closed/)
+- 3. LSP - Liskov Substitution
+- 4. ISP - Interface Segregation
+- 5. DIP - Dependency Inversion
