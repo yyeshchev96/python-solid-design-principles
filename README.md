@@ -6,6 +6,6 @@ Each principle can be found in the corresponding folder:
 
 - 1. SCP - [Single Responsibility](./Single%20Responsibility/)
 - 2. OPC - [Open-Closed](./Open-Closed/)
-- 3. LSP - Liskov Substitution
+- 3. LSP - [Liskov Substitution](./3.%20Liskov%20Substitution/)
 - 4. ISP - Interface Segregation
 - 5. DIP - Dependency Inversion
