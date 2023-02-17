@@ -15,12 +15,11 @@ class BasePaymentProcessor(ABC):
         raise NotImplementedError("Method is not implemented")
 
 
-# CHANGES: we moved sms_auth into a separate class, so we not have more flexability
-# NOTE: There is a better way, but we've fix it in DIP section
+# CHANGES: we moved sms_auth into a separate class, so we now have more flexability
+# NOTE: There is a better way, but we've leavee it for DIP section
 class SMSAuthPaymentProcessor(BasePaymentProcessor):
-    @abstractmethod
     def sms_auth(self, order_id):
-        raise NotImplementedError("Method is not implemented")
+        logging.info(f"Using 3D Secure for order: {order_id}")
 
 
 # CHANGES: Debit can inherit SMSAuth class since it has sms_auth() functionality
@@ -32,9 +31,6 @@ class DebitPaymentProcessor(SMSAuthPaymentProcessor):
 
     def pay(self, order):
         pass
-
-    def sms_auth(self, order_id):
-        logging.info(f"Using 3D Secure for order: {order_id}")
 
 
 # ApplePay doesn't have sms_auth functionality, so it should inherit base PaymentProcessor
